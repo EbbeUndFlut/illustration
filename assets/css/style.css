@@ -24,6 +24,14 @@ p {
     font-size: 20px;
     line-height: 35px;
 }
+
+section{
+    margin-bottom: 15%;
+}
+
+img:hover{
+    box-shadow: 0 0 5px 0px #cecece;
+}
 /* HEADER */
 header {
 	background-image: url("../img/illustration1.gif");
@@ -124,8 +132,10 @@ main section:nth-of-type(2) img{
 }
 
 /* EXAMPLE SECTION */
-main section:nth-of-type(3)+ p{
+main section:nth-of-type(3) h2+ p{
     padding: 5% 15%;
+    width:80%;
+    margin:0 auto;
 }
 main section:nth-of-type(3) img{
     width:40%;
@@ -133,6 +143,9 @@ main section:nth-of-type(3) img{
 }
 
 /* MEMBERSHIP SECTION */
+main section:nth-of-type(4) h2+p{
+    padding-bottom: 25px;
+}
 main section:nth-of-type(4) div {
     background: rgba(36, 191, 242, 0.11);
     width:20%;
@@ -180,4 +193,41 @@ main section:nth-of-type(4) div a{
     padding: 10px 35px;
     border-radius:5px;
     text-decoration: none;
+}
+
+/* FOOTER */
+footer {
+    margin: 15% 0 1% 0;
+    text-align: center;
+}
+
+footer h2{
+    margin-bottom: 5%;
+}
+footer p{
+    margin: 10px;
+    font-size: 15px;
+}
+
+footer p:nth-of-type(odd){
+    color:#7c7b7b;
+}
+footer p span{
+    font-size: 30px;
+    margin-right:3px;
+}
+
+/* SOCIAL MEDIA COLORS */
+footer p span:nth-of-type(1) {
+    color: #3b5998;
+}
+
+footer p span:nth-of-type(2) {
+    color: #fcaf45;
+}
+footer p span:nth-of-type(3) {
+    color: #55acee;
+}
+footer p span:nth-of-type(4) {
+    color: #c4302b;
 }
